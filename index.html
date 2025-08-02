@@ -207,7 +207,7 @@
 </head>
 <body>
     <div class="game-container">
-        <h1>ใบงานออนไลน์: การลบเศษส่วน</h1>
+        <h1>การลบเศษส่วน</h1>
         <div class="game-header">
             <div id="lives-container" class="lives-container"></div>
             <div class="timer-container">
@@ -300,11 +300,11 @@
     const gameState = {
         currentPage: 0,
         lives: 3,
-        timePerQuestion: 300, // 5 minutes
+        timePerQuestion: 300, // 1 minutes
         timeRemaining: 300,
         timerInterval: null,
         currentTargetSpan: null,
-        names: JSON.parse(localStorage.getItem('studentNames')) || ['น้องต้นกล้า', 'ใบบัว', 'ภูผา', 'น้ำใส', 'พอใจ', 'แก้วตา'],
+        names: JSON.parse(localStorage.getItem('studentNames')) || ['อันดำ', 'มิกซ์', 'แอม', 'ทราย+ผู้ช่วย', 'พลอย', 'อุ้งอิ้ง', 'แก้ม', 'แบม'],
         mistakesThisPage: new Set() // **NEW: To track mistakes on the current page**
     };
 
@@ -597,4 +597,5 @@
     document.addEventListener('DOMContentLoaded', initGame);
     </script>
 </body>
+
 </html>
